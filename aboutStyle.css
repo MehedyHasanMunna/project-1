@@ -1,0 +1,866 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Open+Sans+Condensed:wght@300;700&family=Oswald:wght@300;400&family=Shippori+Mincho+B1:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Noto+Sans+JP&family=Shippori+Mincho:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+}
+
+header {
+    position: absolute;
+    right: 46px;
+    top: 22px;
+    z-index: 11;
+    display: none;
+}
+
+
+.main_cointainer {
+    height: 100%;
+    width: 100%;
+    background: #111111;
+    display: flex;
+    overflow: hidden;
+}
+
+
+
+.profilePhoto {
+    width: 9%;
+    height: 100vh;
+}
+
+
+
+.content2 {
+    background: rgb(17, 17, 17);
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    /* background: red; */
+    /* overflow: hidden; */
+}
+
+
+
+.iconList {
+    background: rgb(17 17 17);
+    z-index: 1;
+    height: 100vh;
+}
+
+
+ul {
+    list-style: none;
+    margin-right: 35px;
+}
+
+
+.iconBox {
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    margin: 20px 0px;
+    border-radius: 50%;
+    background: rgb(43, 42, 42);
+}
+
+.iconBox a {
+    display: block;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.iconBox a h2 {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 0px 25px 0px 30px;
+    height: 50px;
+    background-color: #ff00eb;
+    font-size: 17px;
+}
+
+.smallDeviceMenu {
+    position: fixed;
+    right: 0px;
+    top: 170px;
+}
+
+.iconBox i.fa {
+    position: absolute;
+    pointer-events: none;
+}
+
+.iconBox:hover i {
+    color: rgb(255, 255, 255);
+}
+
+
+
+.iconBox a:hover h2 {
+    opacity: 1;
+    right: 27px;
+    margin: 0px;
+    text-align: center;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.fontColor {
+    color: #ff00eb;
+}
+
+#myIcon {
+    font-size: 15px;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.content :hover #myIcon {
+    opacity: 1;
+    padding-left: 20px;
+}
+
+span#icon {
+    z-index: 17;
+    position: fixed;
+    top: 200px;
+    left: 2px;
+    color: black;
+    background: white;
+    font-size: 22px;
+    padding: 13px;
+    transition: all 0.4s ease 0s;
+}
+
+.gearIcon {
+    left: -90px !important;
+}
+
+.colorChanger {
+    position: fixed;
+    top: 84px;
+    left: -250px;
+    width: 210px;
+    height: 210px;
+    z-index: 9999999;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: all 0.4s ease 0s;
+}
+
+.changer {
+    left: 1px !important;
+}
+
+.colorChanger h1 {
+    font-size: 16px;
+    display: inline-block;
+    padding-top: 20px;
+    margin-left: 15px;
+    border-bottom: 1px solid rgb(161, 159, 159);
+}
+
+.colorChanger span {
+    padding-left: 19px;
+    font-size: 22px;
+    color: rgb(154, 150, 150);
+}
+
+.dropIcon {
+    width: 170px;
+    padding-left: 14px;
+    font-size: 31px;
+    margin-left: 10px;
+    line-height: 42px;
+    margin-top: 8px;
+}
+
+.ff {
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.one {
+    color: rgb(55, 10, 235);
+}
+
+.two {
+    color: #ef5777;
+}
+
+.three {
+    color: rgb(138, 43, 226);
+}
+
+.four {
+    color: rgb(65, 105, 225);
+}
+
+.five {
+    color: rgb(240, 0, 240);
+}
+
+.six {
+    color: rgb(224, 16, 89);
+}
+
+.seven {
+    color: rgb(154, 205, 50);
+}
+
+.eight {
+    color: rgb(250, 91, 15);
+}
+
+.nine {
+    color: rgb(7, 243, 231);
+}
+
+.ten {
+    color: rgb(255, 180, 0);
+}
+
+.iconBox:hover {
+    background: #ff00eb;
+}
+
+.iconBox1:hover {
+    background: rgb(55, 10, 235) !important;
+}
+
+.iconBox2:hover {
+    background: #ef5777 !important;
+}
+
+.iconBox3:hover {
+    background: rgb(138, 43, 226) !important;
+}
+
+.iconBox4:hover {
+    background: rgb(65, 105, 225) !important;
+}
+
+.iconBox5:hover {
+    background: rgb(240, 0, 240) !important;
+}
+
+.iconBox6:hover {
+    background: rgb(224, 16, 89) !important;
+}
+
+.iconBox7:hover {
+    background: rgb(154, 205, 50) !important;
+}
+
+.iconBox8:hover {
+    background: rgb(250, 91, 15) !important;
+}
+
+.iconBox9:hover {
+    background: rgb(7, 243, 231) !important;
+}
+
+.iconBox10:hover {
+    background: rgb(255, 180, 0) !important;
+}
+
+.colorChanger a {
+    color: white;
+    background: rgb(38, 169, 230);
+    display: inline-block;
+    margin-left: 11px;
+    margin-top: 6px;
+    padding: 12px 37px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.bg1 {
+    background: rgb(55, 10, 235) !important;
+}
+
+.bg2 {
+    background: #ef5777 !important;
+}
+
+.bg3 {
+    background: rgb(138, 43, 226) !important;
+}
+
+.bg4 {
+    background: rgb(65, 105, 225) !important;
+}
+
+.bg5 {
+    background: rgb(240, 0, 240) !important;
+}
+
+.bg6 {
+    background: rgb(224, 16, 89) !important;
+}
+
+.bg7 {
+    background: rgb(154, 205, 50) !important;
+}
+
+.bg8 {
+    background: rgb(250, 91, 15) !important;
+}
+
+.bg9 {
+    background: rgb(7, 243, 231) !important;
+}
+
+.bg10 {
+    background: rgb(255, 180, 0) !important;
+}
+
+
+.backg1::after {
+    background: rgb(55, 10, 235) !important;
+}
+
+.backg2 ::after {
+    background: #ef5777 !important;
+}
+
+.backg3::after {
+    background: rgb(138, 43, 226) !important;
+}
+
+.backg4::after {
+    background: rgb(65, 105, 225) !important;
+}
+
+.backg5::after {
+    background: rgb(240, 0, 240) !important;
+}
+
+.backg6::after {
+    background: rgb(224, 16, 89) !important;
+}
+
+.backg7::after {
+    background: rgb(154, 205, 50) !important;
+}
+
+.backg8::after {
+    background: rgb(250, 91, 15) !important;
+}
+
+.backg9::after {
+    background: rgb(7, 243, 231) !important;
+}
+
+.backg10::after {
+    background: rgb(255, 180, 0) !important;
+}
+
+
+
+.cl1 {
+    color: rgb(55, 10, 235) !important;
+}
+
+.cl2 {
+    color: #ef5777 !important;
+}
+
+.cl3 {
+    color: rgb(138, 43, 226) !important;
+}
+
+.cl4 {
+    color: rgb(65, 105, 225) !important;
+}
+
+.cl5 {
+    color: rgb(240, 0, 240) !important;
+}
+
+.cl6 {
+    color: rgb(224, 16, 89) !important;
+}
+
+.cl7 {
+    color: rgb(154, 205, 50) !important;
+}
+
+.cl8 {
+    color: rgb(250, 91, 15) !important;
+}
+
+.cl9 {
+    color: rgb(7, 243, 231) !important;
+}
+
+.cl10 {
+    color: rgb(255, 180, 0) !important;
+}
+
+/* this is a common site of everyPages */
+
+
+.aboutFullPage {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.waterMark {
+    text-align: center;
+    padding-top: 58px;
+
+
+}
+
+.waterMark h1 {
+
+    font-size: 7rem;
+    color: #ffffff2e;
+    font-family: 'Newsreader', serif;
+}
+
+
+.waterMark h2 {
+    position: relative;
+    bottom: 92px;
+    font-size: 50px;
+    display: inline-block;
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+}
+
+.waterMark h2 span {
+    color: #ff00eb
+}
+
+.secondSection {
+    position: relative;
+    width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.twoBox {
+    display: flex;
+    width: 100%;
+
+}
+
+.cvItem {
+    display: flex;
+    width: 100%;
+
+}
+
+.box {
+    width: 50%;
+}
+
+.box2 {
+    display: flex;
+
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+    background: #ff00eb;
+    padding: 15px 38px;
+    border-radius: 25px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.one p {
+    color: white;
+    font-weight: 900;
+    padding: 13px 1px;
+}
+
+.one p span {
+    color: #f3ececa1;
+}
+
+.cvItem .one a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 50px;
+
+    border-radius: 25px;
+
+    background: #ff00eb;
+
+    margin-top: 14px;
+
+    display: inline-block;
+}
+
+.another {
+    padding-left: 4pc;
+}
+
+.showUp .box1 {
+    border: 1px solid #ffffff30;
+    padding: 2px 44px;
+}
+
+.showUp .box1 h1 {
+    font-size: 50px;
+    padding-bottom: 10px;
+    color: #ff00eb;
+}
+
+.showUp .box1 h3 {
+
+    font-size: 22px;
+}
+
+.showUp .box1 h4 {
+    font-size: 22px;
+    padding-left: 33px;
+    padding-top: 10px;
+}
+
+.showUp1 {
+    margin-left: 25px;
+}
+
+.box11 {
+    margin-top: 25px
+}
+.downloadIcon{
+    opacity: 0;
+    transition: 0.5s;
+}
+.addbg:hover .downloadIcon {
+    opacity: 1;
+    padding-left:20px
+}
+
+.secondSection::after {
+    position: absolute;
+    content: '';
+    width: 33%;
+    bottom: -50px;
+    height: 2px;
+    background: #e412c1;
+    left: 34%;
+}
+
+
+.thirdSection {
+    margin-top: 100px;
+    position: relative;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.thirdSection::after {
+    position: absolute;
+    content: '';
+    width: 33%;
+    bottom: -50px;
+    height: 2px;
+    background: #e412c1;
+    left: 34%;
+}
+
+.thirdSection h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 10px;
+    border-radius: 50%;
+}
+
+.number {
+    position: absolute;
+    top: 10px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.number h2 {
+    font-size: 22px;
+    transition: 0.3s;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.number h2 span {
+    font-size: 22px;
+}
+
+h2.text {
+    font-size: 17px;
+    padding-top: 20px;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.box:hover .number h2 {
+    font-size: 27px;
+}
+
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 10000;
+    transform: rotate(-92deg);
+}
+
+svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #423740;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 380;
+    stroke-dashoffset: 380;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(380 - (380 * 90) / 100);
+    stroke: #ff00eb;
+
+}
+
+.card:nth-child(2) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(380 - (380 * 87) / 100);
+    stroke: #ff00eb;
+}
+
+.card:nth-child(3) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(380 - (380 * 83) / 100);
+    stroke: #ff00eb;
+}
+
+.card:nth-child(4) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(380 - (380 * 80) / 100);
+    stroke: #ff00eb;
+}
+
+.card:nth-child(5) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(380 - (380 * 78) / 100);
+    stroke: #ff00eb;
+}
+
+.card:nth-child(6) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(380 - (380 * 80) / 100);
+    stroke: #ff00eb;
+}
+
+.card:nth-child(7) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(380 - (380 * 70) / 100);
+    stroke: #ff00eb;
+}
+
+.card:nth-child(8) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(380 - (380 * 40) / 100);
+    stroke: #ff00eb;
+}
+
+.str1 {
+    stroke: rgb(55, 10, 235) !important;
+}
+
+.str2 {
+    stroke: #ef5777 !important;
+}
+
+.str3 {
+    stroke: rgb(138, 43, 226) !important;
+}
+
+.str4 {
+    stroke: rgb(65, 105, 225) !important;
+}
+
+.str5 {
+    stroke: rgb(240, 0, 240) !important;
+}
+
+.str6 {
+    stroke: rgb(224, 16, 89) !important;
+}
+
+.str7 {
+    stroke: rgb(154, 205, 50) !important;
+}
+
+.str8 {
+    stroke: rgb(250, 91, 15) !important;
+}
+
+.str9 {
+    stroke: rgb(7, 243, 231) !important;
+}
+
+.str10 {
+    stroke: rgb(255, 180, 0) !important;
+}
+
+.sectionFour {
+
+    margin-top: 100px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.sectionFour h1 {
+
+    text-align: center;
+}
+
+.sectionFourContainer {
+    display: flex;
+    margin-top: 35px;
+    width: 100%;
+}
+
+.containerOne {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+
+span.briefcase {
+    margin-top: 10px;
+    border-radius: 50%;
+    color: white;
+    padding: 12px 16px;
+    background: #ff00eb;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+}
+
+span.briefcase::before {
+    position: absolute;
+    bottom: -105px;
+    left: 20px;
+    content: '';
+    width: 1px;
+    height: 103px;
+    background: #ffffffad;
+}
+
+.containerSubTwo {
+
+    margin-left: 10px;
+
+    margin-top: 13px;
+}
+
+.containerSubTwo .present {
+
+    background: #6f6666;
+
+    padding: 8px 10px;
+
+    border-radius: 25px;
+
+    font-size: 10px;
+}
+
+.containerSubTwo h2 {
+
+    margin-top: 17px;
+}
+
+.containerSubTwo h2 span {
+
+    font-size: 16px;
+
+    color: #a29999;
+}
+
+.containerSubTwo p {
+    font-size: 19px;
+    padding-top: 17px;
+    font-family: 'Shippori Mincho', serif;
+}
+
+.containerTwo {
+    background: red;
+    height: 100px;
+}
+
+.wrap2 {
+    margin-top: -6px;
+}

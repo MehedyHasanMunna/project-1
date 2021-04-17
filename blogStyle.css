@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Open+Sans+Condensed:wght@300;700&family=Oswald:wght@300;400&family=Shippori+Mincho+B1:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Noto+Sans+JP&family=Shippori+Mincho:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+}
+
+header {
+    position: absolute;
+    right: 46px;
+    top: 22px;
+    z-index: 11;
+    display: none;
+}
+
+
+.main_cointainer {
+    height: 100%;
+    width: 100%;
+    background: #111111;
+    display: flex;
+    overflow: hidden;
+}
+
+
+
+.profilePhoto {
+    width: 9%;
+    height: 100vh;
+}
+
+
+
+.content2 {
+    background: rgb(17, 17, 17);
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    /* background: red; */
+    /* overflow: hidden; */
+}
+
+
+
+.iconList {
+    background: rgb(17 17 17);
+    z-index: 1;
+    height: 100vh;
+}
+
+
+ul {
+    list-style: none;
+    margin-right: 35px;
+}
+
+
+.iconBox {
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    margin: 20px 0px;
+    border-radius: 50%;
+    background: rgb(43, 42, 42);
+}
+
+.iconBox a {
+    display: block;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.iconBox a h2 {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 0px 25px 0px 30px;
+    height: 50px;
+    background-color: #ff00eb;
+    font-size: 17px;
+}
+
+.smallDeviceMenu {
+    position: fixed;
+    right: 0px;
+    top: 170px;
+}
+
+.iconBox i.fa {
+    position: absolute;
+    pointer-events: none;
+}
+
+.iconBox:hover i {
+    color: rgb(255, 255, 255);
+}
+
+
+
+.iconBox a:hover h2 {
+    opacity: 1;
+    right: 27px;
+    margin: 0px;
+    text-align: center;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.fontColor {
+    color: #ff00eb;
+}
+
+#myIcon {
+    font-size: 15px;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.content :hover #myIcon {
+    opacity: 1;
+    padding-left: 20px;
+}
+
+span#icon {
+    z-index: 17;
+    position: fixed;
+    top: 200px;
+    left: 2px;
+    color: black;
+    background: white;
+    font-size: 22px;
+    padding: 13px;
+    transition: all 0.4s ease 0s;
+}
+
+.gearIcon {
+    left: -90px !important;
+}
+
+.colorChanger {
+    position: fixed;
+    top: 84px;
+    left: -250px;
+    width: 210px;
+    height: 210px;
+    z-index: 9999999;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: all 0.4s ease 0s;
+}
+
+.changer {
+    left: 1px !important;
+}
+
+.colorChanger h1 {
+    font-size: 16px;
+    display: inline-block;
+    padding-top: 20px;
+    margin-left: 15px;
+    border-bottom: 1px solid rgb(161, 159, 159);
+}
+
+.colorChanger span {
+    padding-left: 19px;
+    font-size: 22px;
+    color: rgb(154, 150, 150);
+}
+
+.dropIcon {
+    width: 170px;
+    padding-left: 14px;
+    font-size: 31px;
+    margin-left: 10px;
+    line-height: 42px;
+    margin-top: 8px;
+}
+
+.ff {
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.one {
+    color: rgb(55, 10, 235);
+}
+
+.two {
+    color: #ef5777;
+}
+
+.three {
+    color: rgb(138, 43, 226);
+}
+
+.four {
+    color: rgb(65, 105, 225);
+}
+
+.five {
+    color: rgb(240, 0, 240);
+}
+
+.six {
+    color: rgb(224, 16, 89);
+}
+
+.seven {
+    color: rgb(154, 205, 50);
+}
+
+.eight {
+    color: rgb(250, 91, 15);
+}
+
+.nine {
+    color: rgb(7, 243, 231);
+}
+
+.ten {
+    color: rgb(255, 180, 0);
+}
+
+.iconBox:hover {
+    background: #ff00eb;
+}
+
+.iconBox1:hover {
+    background: rgb(55, 10, 235) !important;
+}
+
+.iconBox2:hover {
+    background: #ef5777 !important;
+}
+
+.iconBox3:hover {
+    background: rgb(138, 43, 226) !important;
+}
+
+.iconBox4:hover {
+    background: rgb(65, 105, 225) !important;
+}
+
+.iconBox5:hover {
+    background: rgb(240, 0, 240) !important;
+}
+
+.iconBox6:hover {
+    background: rgb(224, 16, 89) !important;
+}
+
+.iconBox7:hover {
+    background: rgb(154, 205, 50) !important;
+}
+
+.iconBox8:hover {
+    background: rgb(250, 91, 15) !important;
+}
+
+.iconBox9:hover {
+    background: rgb(7, 243, 231) !important;
+}
+
+.iconBox10:hover {
+    background: rgb(255, 180, 0) !important;
+}
+
+.colorChanger a {
+    color: white;
+    background: rgb(38, 169, 230);
+    display: inline-block;
+    margin-left: 11px;
+    margin-top: 6px;
+    padding: 12px 37px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.bg1 {
+    background: rgb(55, 10, 235) !important;
+}
+
+.bg2 {
+    background: #ef5777 !important;
+}
+
+.bg3 {
+    background: rgb(138, 43, 226) !important;
+}
+
+.bg4 {
+    background: rgb(65, 105, 225) !important;
+}
+
+.bg5 {
+    background: rgb(240, 0, 240) !important;
+}
+
+.bg6 {
+    background: rgb(224, 16, 89) !important;
+}
+
+.bg7 {
+    background: rgb(154, 205, 50) !important;
+}
+
+.bg8 {
+    background: rgb(250, 91, 15) !important;
+}
+
+.bg9 {
+    background: rgb(7, 243, 231) !important;
+}
+
+.bg10 {
+    background: rgb(255, 180, 0) !important;
+}
+
+
+.backg1::after {
+    background: rgb(55, 10, 235) !important;
+}
+
+.backg2 ::after {
+    background: #ef5777 !important;
+}
+
+.backg3::after {
+    background: rgb(138, 43, 226) !important;
+}
+
+.backg4::after {
+    background: rgb(65, 105, 225) !important;
+}
+
+.backg5::after {
+    background: rgb(240, 0, 240) !important;
+}
+
+.backg6::after {
+    background: rgb(224, 16, 89) !important;
+}
+
+.backg7::after {
+    background: rgb(154, 205, 50) !important;
+}
+
+.backg8::after {
+    background: rgb(250, 91, 15) !important;
+}
+
+.backg9::after {
+    background: rgb(7, 243, 231) !important;
+}
+
+.backg10::after {
+    background: rgb(255, 180, 0) !important;
+}
+
+
+
+.cl1 {
+    color: rgb(55, 10, 235) !important;
+}
+
+.cl2 {
+    color: #ef5777 !important;
+}
+
+.cl3 {
+    color: rgb(138, 43, 226) !important;
+}
+
+.cl4 {
+    color: rgb(65, 105, 225) !important;
+}
+
+.cl5 {
+    color: rgb(240, 0, 240) !important;
+}
+
+.cl6 {
+    color: rgb(224, 16, 89) !important;
+}
+
+.cl7 {
+    color: rgb(154, 205, 50) !important;
+}
+
+.cl8 {
+    color: rgb(250, 91, 15) !important;
+}
+
+.cl9 {
+    color: rgb(7, 243, 231) !important;
+}
+
+.cl10 {
+    color: rgb(255, 180, 0) !important;
+}
+
+/* this is a common site of everyPages */
+
+.blogFullPage{
+    background-color: #111111;
+    width: 100%;
+}
+.waterMark {
+    text-align: center;
+    padding-top: 58px;
+
+
+}
+
+.waterMark h1 {
+
+    font-size: 7rem;
+    color: #ffffff2e;
+    font-family: 'Newsreader', serif;
+}
+
+
+.waterMark h2 {
+    position: relative;
+    bottom: 92px;
+    font-size: 50px;
+    display: inline-block;
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+}
+
+.waterMark h2 span {
+    color: #ff00eb
+}

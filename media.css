@@ -1,0 +1,304 @@
+@media screen and (min-width: 1340px) {
+    .small_img {
+        display: none;
+    }
+    .hr{
+        display: none;
+    }
+    .extra {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 1340px) and (min-width: 1100px) {
+
+    .content {
+        width: 580px;
+        z-index: -1;
+        margin-left: 27px;
+        margin-right: 27px;
+    }
+
+    .small_img {
+        display: none;
+    }
+    .hr{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1099px) and (min-width: 585px) {
+
+    span#icon {
+        display: none;
+    }
+
+    header {
+        position: absolute;
+        right: 32px;
+        top: 28px;
+        z-index: 111;
+        font-size: 28px;
+        display: block;
+        border-radius: 5px;
+        padding: 10px 15px;
+        background: #4c4848b8;
+    }
+
+    .anotherDiv {
+        display: none;
+    }
+
+    .background {
+        display: none;
+    }
+
+    /*menuBar*/
+    .smallDeviceMenu {
+        position: absolute;
+        background: #262626;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        transition: 0.8s;
+    }
+    .smallDeviceMenuActive{
+        left:0
+    }
+
+    .smallDeviceMenu ul{
+        padding-top:70px;
+    }
+    hr.hr {
+        width: 100%;
+        margin: 0px 12px;
+        margin-top: -11px;
+    }
+    span#crosssIcon {
+        display: none;
+    }
+    #menuIcon{
+        display: block;
+    }
+    .add{
+        display: block !important;
+    }
+    .remove{
+        display: none !important;
+    }
+
+    .iconBox {
+        font-size: 26px;
+        width: 50px;
+        height: 50px;
+        list-style: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease 0s;
+        margin: 20px 0px;
+        border-radius: 50%;
+        background: none !important;
+    }
+    .iconBox a h2 {
+        z-index: -1;
+        position: absolute;
+        top: 0px;
+        left: 23px;
+        opacity: 1;
+        color: rgb(255, 255, 255);
+        line-height: 50px;
+        font-weight: 500;
+        transition: none;
+        border-radius: 30px;
+        text-transform: uppercase;
+        padding: 0px 25px 0px 30px;
+        height: 50px;
+        font-size:  23px;
+        background:none !important;
+    }
+
+    .main_cointainer {
+        height: 100vh;
+        width: 100%;
+        background: #111111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profilePhoto {
+        display: none;
+    }
+
+    .content2 {
+        background: rgb(17, 17, 17);
+        width: 60%;
+        z-index: 0;
+    }
+
+    .content {
+
+        width: 100%;
+
+        z-index: 1;
+
+        margin-left: 0px;
+
+        margin-right: 0px;
+
+    }
+
+    .content h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .content h2 {
+        text-align: center;
+    }
+
+    .content p {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .extra {
+        text-align: center;
+    }
+
+    .small_img {
+        margin: auto;
+        width: 220px;
+        height: 220px;
+        margin-bottom: 30px;
+    }
+
+    .small_img img {
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 584px) and (min-width: 1px) {
+    .small_img {
+        display: none;
+    }
+
+    .anotherDiv {
+        display: none;
+    }
+
+    .background {
+        display: none;
+    }
+
+    span#icon {
+        display: none;
+    }
+
+    .profilePhoto {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        z-index: 1;
+        padding: 0px 30px;
+        margin-right: 0px;
+    }
+
+    .content p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    header {
+        position: absolute;
+        right: 32px;
+        top: 28px;
+        z-index: 111;
+        font-size: 28px;
+        display: block;
+        border-radius: 5px;
+        padding: 10px 15px;
+        background: #4c4848b8;
+    }
+
+
+    .smallDeviceMenu {
+        position: absolute;
+        background: #262626;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        transition: 0.8s;
+    }
+    .smallDeviceMenuActive{
+        left:0
+    }
+
+    .smallDeviceMenu ul{
+        padding-top:70px;
+    }
+    hr.hr {
+        width: 100%;
+        margin: 0px 12px;
+        margin-top: -11px;
+    }
+    span#crosssIcon {
+        display: none;
+    }
+    #menuIcon{
+        display: block;
+    }
+    .add{
+        display: block !important;
+    }
+    .remove{
+        display: none !important;
+    }
+
+    .iconBox {
+        font-size: 26px;
+        width: 50px;
+        height: 50px;
+        list-style: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease 0s;
+        margin: 20px 0px;
+        border-radius: 50%;
+        background: none !important;
+    }
+    .iconBox a h2 {
+        z-index: -1;
+        position: absolute;
+        top: 0px;
+        left: 23px;
+        opacity: 1;
+        color: rgb(255, 255, 255);
+        line-height: 50px;
+        font-weight: 500;
+        transition: none;
+        border-radius: 30px;
+        text-transform: uppercase;
+        padding: 0px 25px 0px 30px;
+        height: 50px;
+        font-size:  23px;
+        background:none !important;
+    }
+    
+}
